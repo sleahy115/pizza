@@ -12,22 +12,43 @@
 </head>
 
 <body>
-  <h1 class="jumbotron">Pizza Shop</h1>
+  <h1 class="jumbotron">Sarah's scrumptious pizzas</h1>
   <div class="container">
-    <div class="panel">
+    <img src="img/pizza-main.jpg" alt="pizza" class="pizza-img">
+    <button class="btn" type="button" id="begin-order">Start your order</button>
+    <div class="panel" id="order">
       <div class="panel-body">
         <form class="form-group order-form">
-          Size: <select id="pizza-size" class="form-control">
+          <h2>Size:</h2> <select id="pizza-size" class="form-control">
           <option value="small">Small</option>
           <option value="medium">Medium</option>
           <option value="large">Large</option>
           <option value="xl">Extra large</option>
           </select>
-          <div class="form-group">
-            <input type="checkbox" name="toppings" value="pepporoni">Pepporoni
-            <input type="checkbox" name="toppings" value="canadian bacon">Canadian Bacon
-            <input type="checkbox" name="toppings" value="Sausage">Sausage
-            <input type="checkbox" name="toppings" value="hamburger">Hamburger
+          <h2>Cheese</h2> <select id="cheese-choices" class="form-control">
+          <option value="regular">Regular</option>
+          <option value="no-cheese">No cheese</option>
+          <option value="half">Cheese on half</option>
+          </select>
+          <div class="form-group" id="checkboxes">
+            <h2>Meats</h2>
+            <input type="checkbox" name="toppings" value="pepperoni">Pepperoni<br>
+            <input type="checkbox" name="toppings" value="canadian bacon">Canadian Bacon<br>
+            <input type="checkbox" name="toppings" value="Sausage">Sausage<br>
+            <input type="checkbox" name="toppings" value="hamburger">Hamburger<br>
+            <h2>Veggies</h2>
+            <input type="checkbox" name="toppings" value="bell-peppers">Bell Peppers<br>
+            <input type="checkbox" name="toppings" value="onions">Onions<br>
+            <input type="checkbox" name="toppings" value="jalapenos">Jalapenos<br>
+            <input type="checkbox" name="toppings" value="hamburger">Olives<br>
+            <input type="checkbox" name="toppings" value="green-chili">Green Chili<br>
+            <h2>Cheese</h2>
+            <input type="checkbox" name="toppings" value="extra-cheese">Extra cheese<br>
+            <input type="checkbox" name="toppings" value="cheese-blend"> Four Cheese<br> blend<br>
+            <h2>Sauces</h2>
+            <input type="checkbox" name="toppings" value="garlic">garlic<br>
+            <input type="checkbox" name="toppings" value="buffalo">buffalo<br>
+            <input type="checkbox" name="toppings" value="ranch">Ranch<br>
           </div>
           <button class="button" type="submit" id="order-submit">Order</button>
         </form>
@@ -35,6 +56,7 @@
         </div>
       </div>
     </div>
+  </div>
 </body>
 
 </html>

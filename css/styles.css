@@ -1,0 +1,29 @@
+.jumbotron {
+  background-color: #fb4833;
+  text-align: center;
+}
+.pizza-img{
+  height: 500px;
+  width: 900px;
+  margin: 25px;
+}
+#order{
+  display: none;
+}
+.panel-body {
+  background-color: #408000;
+}
+.topping-heading {
+  font-size: 15px;
+}
+.output-stream {
+  background-color: #1a3300;
+  color: ivory;
+}
+.form-group {
+  font-size: 18px;
+  font-family: sans-serif;
+}
+#checkboxes {
+  padding: 20px;
+}
