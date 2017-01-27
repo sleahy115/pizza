@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Pizza shop</title>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-  <link href="css/styles.css." rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.1.1.js"></script>
   <script src="js/scripts.js"></script>
   </script>
@@ -18,19 +18,23 @@
       <div class="panel-body">
         <form class="form-group order-form">
           Size: <select id="pizza-size" class="form-control">
-            <option value="small">Small</option>
-            <option value="medium">Medium</option>
-            <option value="large">Large</option>
-            <option value="xl">Extra large</option>
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+          <option value="xl">Extra large</option>
+          </select>
+          <div class="form-group">
+            <input type="checkbox" name="toppings" value="pepporoni">Pepporoni
+            <input type="checkbox" name="toppings" value="canadian bacon">Canadian Bacon
+            <input type="checkbox" name="toppings" value="Sausage">Sausage
+            <input type="checkbox" name="toppings" value="hamburger">Hamburger
+          </div>
+          <button class="button" type="submit" id="order-submit">Order</button>
         </form>
-        <form class="form-group" id="pizza-toppings">
-          <input type="checkbox" name="toppings" value="pepporoni">Pepporoni
-          <input type="checkbox" name="toppings" value="canadian bacon">Canadian Bacon
-          <input type="checkbox" name="toppings" value="Sausage">Sausage
-          <input type="checkbox" name="toppings" value="hamburger">Hamburger
-        </form>
+        <div class="output-stream">
+        </div>
       </div>
     </div>
-  </div>
-  </body>
+</body>
+
 </html>
