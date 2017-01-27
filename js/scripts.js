@@ -4,19 +4,22 @@ function Pizza(size, toppings) {
   this.size = size;
   this.toppings = toppings;
 }
-pizza.prototype.cost (price) {
-  var sizePrice = function () {
+Pizza.prototype.price = function(size,toppings) {
   if (pizzaSize === xl) {
-     pizzaPrice + 2;
-     return pizzaPrice;
-  } else if { (pizzaSize === lg) {
-    pizzaPrice + 1;
-    return pizzaPrice;
-  } else if { (pizzaSize = small)
-    pizzaPrice -1;
-    return pizzaPrice;
+     return pizzaPrice + 2;
+  } else if (pizzaSize === lg) {
+    return pizzaPrice + 1;
+  } else if (pizzaSize === small) {
+    return pizzaPrice - 1;
   }
-  var toppingsPrice = (# of toppings * .50)
+  var toppingsPrice = (numOfToppings * .50);
 
-  sizePrice + toppingsPrice = price;
+  return sizePrice + toppingsPrice;
 }
+
+$(function() {
+ $("#form.order").submit(function(){
+  var sizeInput = $("input#size").val();
+  var toppingsInput = $("input#toppings").val();
+ });
+});
