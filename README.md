@@ -14,10 +14,8 @@ _A sample pizza website that accepts input about the pizza and outputs a confirm
 |Event|Outcome|
 |------|------|
 |Size| small, medium, large, or extra large|
-|Price calculated based on size| small pizza = $14,
-medium pizza price = $15,
-large pizza = $16,
-extra large pizza = $17|
+|Price calculated based on size| small pizza = $14, medium pizza price = $15,
+large pizza = $16, extra large pizza = $17|
 |Toppings | meat, veggies, cheese, and sauces|
 |Price calculated based on number of toppings selected| each topping adds .50 to the cost|
 |Total price is calculated| pie price + topping price|
