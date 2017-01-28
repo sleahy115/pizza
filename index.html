@@ -20,15 +20,15 @@
       <div class="panel-body">
         <form class="form-group order-form">
           <h2>Size:</h2> <select id="pizza-size" class="form-control">
-          <option value="small">Small</option>
-          <option value="medium">Medium</option>
-          <option value="large">Large</option>
-          <option value="xl">Extra large</option>
-          </select>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+            <option value="xl">Extra large</option>
+            </select>
           <h2>Cheese</h2> <select id="cheese-choices" class="form-control">
-          <option value="regular">Regular</option>
-          <option value="no-cheese">No cheese</option>
-          <option value="half">Cheese on half</option>
+            <option value="regular">Regular</option>
+            <option value="no-cheese">No cheese</option>
+            <option value="half">Cheese on half</option>
           </select>
           <div class="form-group" id="checkboxes">
             <h2>Meats</h2>
@@ -52,10 +52,18 @@
           </div>
           <button class="button" type="submit" id="order-submit">Order</button>
         </form>
-        <div class="output-stream">
-          <h2>Your pizza order:<span class="toppings"></span><span class="size"></span><span class="cheese"></span>
-          </h2>
-          <!-- newPizza.pizzaSize + "pizza" + " with " + newPizza.toppings + " and " + newPizza.cheese + </h2>); -->
+      </div>
+      <div class="panel output-stream">
+        <div class="panel-body">
+          <h2>Your pizza order:<br>
+          <span class="toppings">Toppings chosen: </span>
+          Size choosen:
+          <span class="size"> </span><br>
+          Cheese selection:
+          <span class="cheese"> </span><br>
+          Price:
+          <span class="price"></span><br>
+        </h2>
         </div>
       </div>
     </div>

@@ -5,10 +5,11 @@
   text-shadow: 1px 1px darkred;
   font-size: 55px;
 }
-.pizza-img{
+.pizza-img {
   height: 500px;
   width: 900px;
   margin: 25px;
+  border: 5px inset darkgreen;
 }
 #begin-order{
   margin-left: 100px;
@@ -30,6 +31,7 @@
 .output-stream {
   background-color: #1a3300;
   color: ivory;
+  margin-top: 10px;
 }
 .form-group {
   font-size: 18px;
