@@ -22,6 +22,11 @@ function toppingsPrice(toppings) {
     var toppingsCost = (toppings * .50);
     return toppingsCost;
 }
+Pizza.prototype.totalPrice = function() {
+var total = this.toppingsPrice + this.sizeCost;
+parseInt(total,10);
+return total;
+}
 
 $(function() {
     $("#begin-order").click(function() {
@@ -44,6 +49,7 @@ $(function() {
             $(".size").text(newPizza.pizzaSize);
             $(".cheese").text(newPizza.cheese);
             $(".price").text('$' + totalCost);
+            $(".price-test").text(newPizza.totalPrice);
         });
     });
 });
