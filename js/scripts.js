@@ -19,7 +19,7 @@ Pizza.prototype.pizzaCost = function() {
         sizePrice = this.totalPrice
     }
     console.log(sizePrice)
-    for (i = 0; i <= this.toppings.length; i++) {
+    for (i = 0; i < this.toppings.length; i++) {
         this.totalPrice = i + 1;
         toppingsPrice = this.totalPrice
         console.log(toppingsPrice)
@@ -47,7 +47,7 @@ $(function() {
         newPizza.toppings = toppingsInput;
         total = newPizza.pizzaCost();
         console.log(total)
-        $(".toppings").append(newPizza.toppings + '<br>');
+        $(".toppings").text(newPizza.toppings);
         $(".size").text(newPizza.pizzaSize);
         $(".cheese").text(newPizza.cheese);
         $(".price-test").text(total);
